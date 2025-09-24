@@ -102,12 +102,6 @@ class LogisticRegressionGD(Model):
     def sigmoid(z):
         return 1 / (1 + np.exp(-z))
 
-    def _get_mini_batches(self, X: np.ndarray, y: np.ndarray) -> list:
-        """Generate mini-batches for stochastic gradient descent."""
-        
-        # Create mini-batches
-        pass
-
     def fit(self, X: np.ndarray, y: np.ndarray) -> 'LogisticRegressionGD':
         """
         Fit the model using gradient descent.
