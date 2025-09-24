@@ -1,0 +1,32 @@
+In this assignment, you will implement a logistic regression model from scratch for binary classification.
+
+You will use the Wine dataset from sklearn.datasets but focus only on classes 0 and 1. After implementing your logistic regression, you will compare its performance with the default LogisticRegression model from scikit-learn.
+
+Instructions:
+Move Base Model File: 
+
+Create an abstract base class Model using Python’s abc module with the following abstract methods:
+fit(X, y): Train the model on input features X and target y.
+predict(X): Predict class labels for input features X.
+cost_function(X, y): Compute the cost (e.g., log-loss) for the current model parameters.
+You may define this class within your Jupyter Notebook or Python script; no separate file is required.
+Create a New Class for Logistic Regression: [20 pt]
+
+Implement logistic regression by extending the Model class from.
+The logistic regression model should:
+Fit the model parameters.
+Predict class labels based on the sigmoid function.
+Evaluate performance using Confusion matrix, Accuracy,  Precision, Recall, and ROC curve
+Dataset: 
+
+Use the load_wine() dataset from sklearn.datasets.
+Select only the classes 0 and 1 for binary classification.
+Compare with sklearn Logistic Regression: [5pt]
+
+After implementing your logistic regression model, compare its performance with the default LogisticRegression from scikit-learn.
+Perform the following comparisons: Confusion matrix, Accuracy,  Precision, Recall, and ROC curve
+Report: [5 pt]
+
+Submit your implementation in a Jupyter notebook.
+There is no need to submit a separate report file (e.g., .docx, .pdf) if the notebook contains all results, code, and comparisons.
+Report should contain your findings. 
